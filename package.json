@@ -1,0 +1,17 @@
+{
+  "name": "chai-backend",
+  "version": "1.0.0",
+  "description": "a backend series with chaia aur express - youtube",
+  "keywords": [
+    "javascript",
+    "chai",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "Ganesh Solanki",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
