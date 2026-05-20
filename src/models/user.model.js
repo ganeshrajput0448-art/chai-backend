@@ -52,11 +52,11 @@ const userSchema = new Schema(
     }
 )
 
-userSchema.pre("save", async function (next) {
-    if(!this.isModified("password")) return next();
+userSchema.pre("save", async function () {  // yha par userSchema.pre("save", async function (next)   tha
+    if(!this.isModified("password")) return ;   // yha par next() tha
 
     this.password = await bcrypt.hash(this.password, 10)
-    next()
+    //ytha par next() tha
 })
 
 userSchema.methods.isPasswordCorrect = async function(password){
